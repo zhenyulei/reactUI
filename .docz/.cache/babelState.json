@@ -1,0 +1,200 @@
+{
+  "stages": {
+    "develop": {
+      "plugins": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-typescript/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true
+          }
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "develop-html": {
+      "plugins": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-typescript/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true
+          }
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-html": {
+      "plugins": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-typescript/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true
+          }
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    },
+    "build-javascript": {
+      "plugins": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-nullish-coalescing-operator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "babel-plugin-export-metadata",
+          "options": {
+            "root": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI"
+          }
+        }
+      ],
+      "presets": [
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-typescript/node_modules/@babel/preset-typescript/lib/index.js",
+          "options": {
+            "plugins": [],
+            "isTSX": true,
+            "allExtensions": true
+          }
+        },
+        {
+          "name": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/@emotion/babel-preset-css-prop/dist/babel-preset-css-prop.cjs.js",
+          "options": {
+            "sourceMap": true,
+            "autoLabel": true,
+            "plugins": []
+          }
+        }
+      ],
+      "options": {
+        "cacheDirectory": true,
+        "sourceType": "unambiguous"
+      }
+    }
+  },
+  "browserslist": [
+    ">0.25%",
+    "not dead"
+  ]
+}

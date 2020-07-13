@@ -1,0 +1,57 @@
+---
+name: Button
+menu: Components
+---
+
+> Button 组件
+
+使用方式如下所示：
+
+import { Playground, Props } from 'docz';
+import Button from './button.tsx'
+import '../../styles/index.scss';
+
+
+<Playground>
+{
+    ()=>{
+        const btnData = {
+            "func": {
+                "btnType":"half",
+                "btnWord": "立即开通"
+            },
+            "style": {
+                "btnWidth": "180",
+                "btnHeight": "100",
+                "btnBgColor":"linear-gradient(270deg,#ffc900,#ffd841)",
+                "btnRadius":"50"
+            },
+            "data": {
+                "event": {
+                "type": "out",
+                "filter": "() => {}"
+                },
+                "getData": {
+                "currPrice":"98",
+                "oldPrice":"199"
+                }
+            }
+        }
+        return (
+            <Button {...btnData.func} {...btnData.style} {...btnData.data}>我是按钮1</Button>
+        )
+    }
+}
+</Playground>
+
+
+
+**基本属性**
+
+|属性名称|说明|默认值|
+|--|--|--|
+|btnType|按钮类型|--|
+|btnWord|按钮文案|--|
+|btnWidth|按钮宽度|--|
+|btnHeight|按钮高度|--|
+|btnBgColor|按钮颜色|--|
