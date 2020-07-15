@@ -25,7 +25,7 @@ function createCss(name){
             if(error){
                 console.log(error);
             }
-            fs.writeFile(currPath(stylePath+'/index.css'), result.css, function(err){
+            fs.writeFile(currPath(stylePath+'/index.scss'), result.css, function(err){
                 if(err){
                     console.log(err);
                 }

@@ -3,8 +3,8 @@
     "title": "PLUS会员组件库",
     "description": "一款开发plus会员业务组件的代码库",
     "menu": [
-      "Introduce",
-      "Components"
+      "快速上手",
+      "业务组件"
     ],
     "version": "0.1.0",
     "repository": null,
@@ -24,7 +24,7 @@
       "key": "src/components/button/button.mdx",
       "value": {
         "name": "Button",
-        "menu": "Components",
+        "menu": "业务组件",
         "id": "0c98ee3dc53ea6cfddf4212e0693756d",
         "filepath": "src/components/button/button.mdx",
         "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/src/components/button/button.mdx",
@@ -39,7 +39,7 @@
       "key": "src/components/menu/menu.mdx",
       "value": {
         "name": "Menu",
-        "menu": "Components",
+        "menu": "业务组件",
         "id": "1c89fa9f685be9571ffff0eb2beb7233",
         "filepath": "src/components/menu/menu.mdx",
         "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/src/components/menu/menu.mdx",
@@ -59,7 +59,7 @@
     {
       "key": "src/welcome.mdx",
       "value": {
-        "name": "Introduce",
+        "name": "快速上手",
         "route": "/",
         "id": "2df9ec3b2efa749b32af93135787a249",
         "filepath": "src/welcome.mdx",

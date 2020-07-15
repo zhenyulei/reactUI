@@ -1,9 +1,24 @@
 ---
-name: Introduce
+name: 快速上手
 route: /
 ---
 
 > 欢迎访问PLUS会员业务组件库
+
+
+
+**安装**
+
+```js
+npm install reactui -S
+```
+
+组件样式基于 sass 开发，需要安装 node-sass
+
+```js
+npm install node-sass -D
+```
+
 
 **支持按需加载**
 
@@ -32,7 +47,7 @@ npm i @nutui/babel-plugin-separate-import -D
 }
 ```
 
-接下来，我们就可以在项目里只引入用到的组件了。默认情况下，样式也无需单独引入。插件会自动将组件样式引入方式。
+接下来，我们就可以在项目里只引入用到的组件了。默认情况下，样式也无需单独引入。插件会自动将组件的 SCSS 样式引入方式。
 
 ```js
 import { Button } from 'reactui';

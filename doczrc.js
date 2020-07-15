@@ -5,5 +5,5 @@ export default {
   description: "一款开发plus会员业务组件的代码库",
   typescript: true,
   themesDir: 'theme',
-  menu: ['Introduce', 'Components']
+  menu: ['快速上手', '业务组件']
 };
