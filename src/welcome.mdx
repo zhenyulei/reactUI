@@ -3,4 +3,37 @@ name: Introduce
 route: /
 ---
 
-### 欢迎访问PLUS会员业务组件库
+> 欢迎访问PLUS会员业务组件库
+
+**支持按需加载**
+
+用户安装 `npm i reactui -S`,
+首先安装 `@nutui/babel-plugin-separate-import` 插件:
+
+```js
+npm i @nutui/babel-plugin-separate-import -D
+```
+然后配置一下babel的配置文件，如果使用的create-react-app脚手架，则需要执行 `npm run eject` 后，在package.json中新增 babel的配置项：
+
+```js
+"babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "reactui",
+          "libraryDirectory": "dist/components"
+        }
+      ]
+    ]
+}
+```
+
+接下来，我们就可以在项目里只引入用到的组件了。默认情况下，样式也无需单独引入。插件会自动将组件样式引入方式。
+
+```js
+import { Button } from 'reactui';
+```

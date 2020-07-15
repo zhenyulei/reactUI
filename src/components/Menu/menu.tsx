@@ -1,70 +1,78 @@
-import React, { FC } from 'react';
-import classNames from 'classnames'
+import React, { FC, useState, createContext, CSSProperties } from 'react';
+import classNames from 'classnames';
+import { MenuItemProps } from './menuItem';
 
-export enum ButtonType {
-  Complete='complete',
-  Half='half'
+type MenuMode = 'horizontal' | 'vertical'
+export interface MenuProps {
+  /**默认 active 的菜单项的索引值 */
+  defaultIndex?: string;
+  className?: string;
+  /**菜单类型 横向或者纵向 */
+  mode?: MenuMode;
+  style?: CSSProperties;
+  /**点击菜单项触发的回掉函数 */
+  onSelect?: (selectedIndex: string) => void;
+  /**设置子菜单的默认打开 只在纵向模式下生效 */
+  defaultOpenSubMenus?: string[];
 }
-interface btnData{
-  currPrice?:string,//当前价格
-  oldPrice?:string,//原价格
-}
-
-interface BaseButtonProps{
-  btnType?:string,//按钮类型
-  btnWidth?:string,//按钮宽度
-  btnHeight?:string,//按钮高度
-  btnBgColor?:string,//按钮背景颜色
-  btnBgImg?:string,//按钮背景图
-  btnRadius?:string,//按钮边框角度
-  isShowBadge?:boolean,//是否显示徽标
-  disabled?:boolean,//是否禁用
-  className?:string,//自定义类名
-  btnWord?:string,//按钮文案
-  getData?:btnData
+interface IMenuContext {
+  index: string;
+  onSelect?: (selectedIndex: string) => void;
+  mode?: MenuMode;
+  defaultOpenSubMenus?: string[];  
 }
 
-const Button:FC<BaseButtonProps> = (props)=>{
-  const {
-    btnType,
-    disabled,
-    className,
-    btnWidth,
-    btnHeight,
-    btnBgColor,
-    getData,
-    btnRadius,
-    btnWord,
-  } = props;
-  // 添加以下的样式 btn, btn-lg, btn-primary
-  const classes = classNames('btn',className,{
-      [`btn-${btnType}`]: ButtonType,  //btnType有值的时候 就添加上
-      'disabled': disabled
+export const MenuContext = createContext<IMenuContext>({index: '0'})
+/**
+ * 为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。
+ * ~~~js
+ * import { Menu } from 'vikingship'
+ * ~~~
+ */
+export const Menu: FC<MenuProps> = (props) => {
+  const { className, mode, style, children, defaultIndex, onSelect, defaultOpenSubMenus } = props
+  const [ currentActive, setActive ] = useState(defaultIndex)
+  const classes = classNames('viking-menu', className, {
+    'menu-vertical': mode === 'vertical',
+    'menu-horizontal': mode !== 'vertical',
   })
-  const btnStyle = {
-    width:btnWidth+'px',
-    height:btnHeight+'px',
-    background:btnBgColor,
-    borderTopLeftRadius:btnRadius+'px',
-    borderBottomLeftRadius:btnRadius+'px',
+  const handleClick = (index: string) => {
+    setActive(index)
+    if(onSelect) {
+      onSelect(index)
+    }
+  }
+  const passedContext: IMenuContext = {
+    index: currentActive ? currentActive : '0',
+    onSelect: handleClick,
+    mode,
+    defaultOpenSubMenus,
+  }
+  const renderChildren = () => {
+    return React.Children.map(children, (child, index) => {
+      const childElement = child as React.FunctionComponentElement<MenuItemProps>
+      const { displayName } = childElement.type
+      if (displayName === 'MenuItem' || displayName === 'SubMenu') {
+        return React.cloneElement(childElement, {
+          index: index.toString()
+        })
+      } else {
+        console.error("Warning: Menu has a child which is not a MenuItem component")
+      }
+    })
   }
   return (
-    <button className={classes} style={btnStyle}>
-      {
-        getData && getData.currPrice &&
-        <p className="price">
-          <span className="price-icon">¥</span>
-          <span className="curr-price">{getData.currPrice}</span>
-          <span className="old-price">{getData.oldPrice}</span>
-        </p>
-      }
-      <p className="word">{btnWord}</p>
-    </button>
+    <ul className={classes} style={style} data-testid="test-menu">
+      <MenuContext.Provider value={passedContext}>
+        {renderChildren()}
+      </MenuContext.Provider>
+    </ul>
   )
 }
-Button.defaultProps = {
-  btnBgImg:'',
-  isShowBadge:false,
-  btnType:ButtonType.Half
+Menu.defaultProps = {
+  defaultIndex: '0',
+  mode: 'horizontal',
+  defaultOpenSubMenus: [],
 }
-export default Button;
+
+export default Menu;

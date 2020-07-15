@@ -1,7 +1,10 @@
 {
-  "name": "myapp",
+  "name": "reactui",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -12,12 +15,15 @@
     "react-transition-group": "^4.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "dev": "react-scripts dev",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "docz:dev": "docz dev",
-    "docz:build": "docz build"
+    "docz:dev": "rimraf ./.docz && docz dev",
+    "docz:build": "docz build",
+    "build-ts": "tsc -p tsconfig.build.json",
+    "build-css": "node ./scripts/nodeSass.js",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && npm run build-ts && npm run build-css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +54,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "rimraf": "^3.0.2",
     "theme-ui": "^0.3.1",
     "typescript": "~3.7.2"
   }

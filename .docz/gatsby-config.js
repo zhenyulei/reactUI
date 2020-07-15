@@ -106,16 +106,6 @@ const config = {
           db:
             '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/db.json',
         },
-        htmlContext: {
-          head: {
-            links: [
-              {
-                rel: 'stylesheet',
-                href: 'https://codemirror.net/theme/dracula.css',
-              },
-            ],
-          },
-        },
       },
     },
   ],

@@ -1,0 +1,32 @@
+@import '../../../styles/index.scss';
+
+.btn{
+    border:1px solid red;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $pink;
+    .price{
+        .curr-price{
+            font-size: 40px;
+            font-weight: bold;
+            margin:0 5px;
+        }
+        .old-price{
+            color: #8b7c41;
+            font-size: 20px;
+            text-decoration: line-through;
+        }
+    }
+    .word{
+        color:#172047;
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+    p{
+        margin-bottom: 0;
+    }
+  }
