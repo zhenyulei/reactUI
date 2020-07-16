@@ -23,7 +23,8 @@
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node ./scripts/nodeSass.js",
     "clean": "rimraf ./dist",
-    "build": "npm run clean && npm run build-ts && npm run build-css"
+    "build": "npm run clean && npm run build-ts && npm run build-css",
+    "upload":"node ./scripts/test_script/upload.js"
   },
   "eslintConfig": {
     "extends": "react-app"

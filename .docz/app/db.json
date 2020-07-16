@@ -15,7 +15,7 @@
       "./src/components/**/*.mdx",
       "./src/*.mdx"
     ],
-    "dest": "doc-site",
+    "dest": "docsite",
     "typescript": true,
     "themesDir": "theme"
   },
