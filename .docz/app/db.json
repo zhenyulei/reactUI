@@ -21,24 +21,10 @@
   },
   "entries": [
     {
-      "key": "src/components/button/button.mdx",
-      "value": {
-        "name": "Button",
-        "menu": "业务组件",
-        "id": "0c98ee3dc53ea6cfddf4212e0693756d",
-        "filepath": "src/components/button/button.mdx",
-        "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/src/components/button/button.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-components-button-button",
-        "route": "/src-components-button-button",
-        "headings": []
-      }
-    },
-    {
       "key": "src/components/menu/menu.mdx",
       "value": {
         "name": "Menu",
+        "route": "/menu",
         "menu": "业务组件",
         "id": "1c89fa9f685be9571ffff0eb2beb7233",
         "filepath": "src/components/menu/menu.mdx",
@@ -46,7 +32,6 @@
         "link": "",
         "hidden": false,
         "slug": "src-components-menu-menu",
-        "route": "/src-components-menu-menu",
         "headings": [
           {
             "slug": "基本属性",
@@ -54,6 +39,21 @@
             "value": "基本属性"
           }
         ]
+      }
+    },
+    {
+      "key": "src/components/button/button.mdx",
+      "value": {
+        "name": "Button",
+        "route": "/button",
+        "menu": "业务组件",
+        "id": "0c98ee3dc53ea6cfddf4212e0693756d",
+        "filepath": "src/components/button/button.mdx",
+        "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/src/components/button/button.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-button-button",
+        "headings": []
       }
     },
     {
