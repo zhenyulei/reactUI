@@ -58,7 +58,7 @@ const Button:FC<BaseButtonProps> = (props)=>{
           <span className="old-price">{getData.oldPrice}</span>
         </p>
       }
-      <p className="word">{btnWord}</p>
+      <p className="word">wo-{btnWord}</p>
     </button>
   )
 }

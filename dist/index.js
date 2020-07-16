@@ -58,5 +58,5 @@
 //   </React.StrictMode>,
 //   document.getElementById('root')
 // );
-export { default as Button } from './components/button';
-export { Menu, MenuItem, SubMenu } from './components/menu';
+export { default as Button } from './components/Button';
+export { Menu, MenuItem, SubMenu } from './components/Menu';

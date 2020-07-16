@@ -22,7 +22,8 @@
     "docz:build": "rimraf ./docsite && docz build",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node ./scripts/nodeSass.js",
-    "build": "rimraf ./dist && npm run build-ts && npm run build-css"
+    "build": "rimraf ./dist && npm run build-ts && npm run build-css",
+    "add": "node ./scripts/createTemplate/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -48,6 +49,7 @@
     "docz": "^2.3.1",
     "docz-theme-default": "^1.2.0",
     "gatsby-plugin-less": "^4.0.2",
+    "inquirer": "^7.3.2",
     "less": "^3.11.3",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",

@@ -26,7 +26,9 @@ var Button = function (props) {
                 React.createElement("span", { className: "price-icon" }, "\u00A5"),
                 React.createElement("span", { className: "curr-price" }, getData.currPrice),
                 React.createElement("span", { className: "old-price" }, getData.oldPrice)),
-        React.createElement("p", { className: "word" }, btnWord)));
+        React.createElement("p", { className: "word" },
+            "wo-",
+            btnWord)));
 };
 Button.defaultProps = {
     btnBgImg: '',

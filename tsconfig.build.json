@@ -15,4 +15,4 @@
       "src/**/*.test.tsx",
       "src/setupTests.ts"
     ]
-  }
+}

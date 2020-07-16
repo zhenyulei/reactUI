@@ -1,11 +1,15 @@
 {
     "packages":[
         {
-            "name":"button",
+            "name":"Button",
+            "chnName":"按钮组件",
+            "desc":"常用来渲染开通按钮",
             "author":"zhenyulei"
         },
         {
-            "name":"menu",
+            "name":"Menu",
+            "chnName":"菜单组件",
+            "desc":"常用来渲染菜单组件",
             "author":"zhenyulei"
         }
     ]
