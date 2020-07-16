@@ -19,12 +19,10 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "docz:dev": "rimraf ./.docz && docz dev",
-    "docz:build": "docz build",
+    "docz:build": "rimraf ./docsite && docz build",
     "build-ts": "tsc -p tsconfig.build.json",
     "build-css": "node ./scripts/nodeSass.js",
-    "clean": "rimraf ./dist",
-    "build": "npm run clean && npm run build-ts && npm run build-css",
-    "upload":"node ./scripts/test_script/upload.js"
+    "build": "rimraf ./dist && npm run build-ts && npm run build-css"
   },
   "eslintConfig": {
     "extends": "react-app"
