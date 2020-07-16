@@ -10,7 +10,6 @@ configs.packages.forEach(item => {
 function currPath(paths){
     return path.resolve(__dirname,paths)
 }
-
 function createCss(name){
     sass.render({
         file: currPath(`../src/components/${name}/style/index.scss`),
@@ -31,7 +30,6 @@ function createCss(name){
                 }
             });
         });
-        
     });
 }
 

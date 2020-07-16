@@ -81,12 +81,7 @@ src/components/${name}/index.tsx
     ]
 }
 ```
-
-//按需加载
-
-import  {Button}  from 'reactui'
-
-会变成
+export { default as Button } from './components/Button'
 
 
 
