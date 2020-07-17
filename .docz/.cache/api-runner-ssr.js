@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
-      options: {"plugins":[],"extensions":[".md",".mdx"],"remarkPlugins":[[null,{"type":"yaml","marker":"-"}],null],"rehypePlugins":[null,null],"gatsbyRemarkPlugins":[],"defaultLayouts":{"default":"/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-theme-docz/src/base/Layout.js"}},
+      plugin: require('/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/node_modules/gatsby-plugin-mdx/gatsby-ssr'),
+      options: {"plugins":[],"extensions":[".md",".mdx"],"remarkPlugins":[[null,{"type":"yaml","marker":"-"}],null],"rehypePlugins":[null,null],"gatsbyRemarkPlugins":[],"defaultLayouts":{"default":"/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/node_modules/gatsby-theme-docz/src/base/Layout.js"}},
     },{
-      plugin: require('/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/gatsby-plugin-react-helmet-async/gatsby-ssr'),
+      plugin: require('/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/node_modules/gatsby-plugin-react-helmet-async/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

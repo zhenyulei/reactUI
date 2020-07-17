@@ -98,36 +98,44 @@ route: /${lowerName}
 menu: 业务组件
 ---
 > ${answers.desc}
-建议不要在文档中使用 ## 形式的二级标题，否则文档会自动把二级标题添加到左侧导航`
+
+建议不要在文档中使用 ## 形式的二级标题，否则文档会自动把二级标题添加到左侧导航
+
+import { Playground, Props } from 'docz'
+import ${answers.name} from './index.tsx'
+
+<Playground>
+	<${answers.name}>我是组件文字</${answers.name}>
+</Playground>
+`
 }
 
-function initTsx(answers){
+function initIndex(answers){
+const lowerName = answers.name.toLowerCase();
 return `import React, { FC } from 'react';
 import classNames from 'classnames';
+import './style/index.scss';
+
 interface BaseProps{
-    className?:string,//自定义类名
+	className?:string;//自定义类名
+	children: React.ReactNode;
 }
 
 const ${answers.name}:FC<BaseProps> = (props)=>{
   const {
-    className
+	className,
+	children,
   } = props;
   const classes = classNames('wrapper',className);
 
   return (
-    <div className={classes}>
+	<div className={classes}>
+	{children}
     </div>
   )
 }
 ${answers.name}.defaultProps = {
 }
-export default ${answers.name};
-`
-}
-function initIndex(answers){
-const lowerName = answers.name.toLowerCase();
-return `import ${answers.name} from './${lowerName}';
-import './style/index.scss';
 export default ${answers.name};`
 }
 
@@ -135,11 +143,27 @@ function initTest(){
 return `import React from 'react';
 import { render } from '@testing-library/react';
 
+function add(a:number,b:number){
+	return a+b;
+}
 describe('test测试', () => {
 	it('should render the correct', () => {
 		expect(add(1, 2)).toBe(3)
 	})
 })`
+}
+
+function addStyle(){
+return `@import '../../../styles/index.scss';
+.wrapper{
+	width:150px;
+	height:100px;
+	text-align:center;
+	line-height:100px;
+	background:pink;
+	color:#fff;
+}
+`
 }
 
 function addConf(answers){
@@ -161,10 +185,9 @@ function createDir(answers){
 	const filePath = `components/${answers.name}`;
 	mkdirPath(filePath).then(()=>{
 		mkdirPath(`${filePath}/style`).then(()=>{
-			writeFile(`${filePath}/style/index.scss`,`@import '../../../styles/index.scss';`)
+			writeFile(`${filePath}/style/index.scss`,addStyle())
 		})
 		writeFile(`${filePath}/${lowerName}.mdx`,initMdx(answers));
-		writeFile(`${filePath}/${lowerName}.tsx`,initTsx(answers));
 		writeFile(`${filePath}/${lowerName}.test.tsx`,initTest());
 		writeFile(`${filePath}/index.tsx`,initIndex(answers));
 		appendFile(`index.tsx`,`\r\nexport { default as ${answers.name} } from './components/${answers.name}';`);

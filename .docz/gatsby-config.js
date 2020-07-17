@@ -54,7 +54,7 @@ const config = {
         open: null,
         'open-browser': null,
         root:
-          '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz',
+          '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz',
         base: '/',
         source: './',
         'gatsby-root': null,
@@ -74,37 +74,37 @@ const config = {
         separator: '-',
         paths: {
           root:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI',
           templates:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/node_modules/docz-core/dist/templates',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/node_modules/docz-core/dist/templates',
           docz:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz',
           cache:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/.cache',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/.cache',
           app:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app',
           appPackageJson:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/package.json',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/package.json',
           appTsConfig:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/tsconfig.json',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/tsconfig.json',
           gatsbyConfig:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/gatsby-config.js',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/gatsby-config.js',
           gatsbyBrowser:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/gatsby-browser.js',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/gatsby-browser.js',
           gatsbyNode:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/gatsby-node.js',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/gatsby-node.js',
           gatsbySSR:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/gatsby-ssr.js',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/gatsby-ssr.js',
           importsJs:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/imports.js',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app/imports.js',
           rootJs:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/root.jsx',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app/root.jsx',
           indexJs:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/index.jsx',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app/index.jsx',
           indexHtml:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/index.html',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app/index.html',
           db:
-            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactUI/.docz/app/db.json',
+            '/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/.docz/app/db.json',
         },
       },
     },

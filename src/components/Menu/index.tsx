@@ -1,10 +1,11 @@
-import Menu from './menu'
+import MenuBox from './menuBox'
 import SubMenu from './subMenu'
 import MenuItem from './menuItem'
 import './style/index.scss'
 
-export {
-    Menu,
-    MenuItem,
+const Menu = {
+    MenuBox,
     SubMenu,
+    MenuItem
 }
+export default Menu
