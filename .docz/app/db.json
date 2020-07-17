@@ -68,7 +68,13 @@
         "link": "",
         "hidden": false,
         "slug": "src-components-text-box-textbox",
-        "headings": []
+        "headings": [
+          {
+            "slug": "组件标题",
+            "depth": 1,
+            "value": "组件标题"
+          }
+        ]
       }
     },
     {
@@ -83,11 +89,287 @@
         "hidden": false,
         "slug": "src-welcome",
         "menu": "",
-        "headings": []
+        "headings": [
+          {
+            "slug": "组件库使用方式",
+            "depth": 3,
+            "value": "组件库使用方式"
+          },
+          {
+            "slug": "组件库开发者使用",
+            "depth": 3,
+            "value": "组件库开发者使用"
+          }
+        ]
       }
     }
   ],
   "props": [
+    {
+      "key": "src/index.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "props": {
+            "btnType": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnType",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnWidth": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnWidth",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnHeight": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnHeight",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnBgColor": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnBgColor",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnBgImg": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnBgImg",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnRadius": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnRadius",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "isShowBadge": {
+              "defaultValue": null,
+              "description": "",
+              "name": "isShowBadge",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "disabled": {
+              "defaultValue": null,
+              "description": "",
+              "name": "disabled",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "btnWord": {
+              "defaultValue": null,
+              "description": "",
+              "name": "btnWord",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "getData": {
+              "defaultValue": null,
+              "description": "",
+              "name": "getData",
+              "required": false,
+              "type": {
+                "name": "btnData | undefined"
+              }
+            }
+          }
+        },
+        {
+          "description": "为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。\n~~~js\nimport { Menu } from 'vikingship'\n~~~",
+          "displayName": "Menu",
+          "methods": [],
+          "props": {
+            "defaultIndex": {
+              "defaultValue": null,
+              "description": "默认 active 的菜单项的索引值",
+              "name": "defaultIndex",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "mode": {
+              "defaultValue": null,
+              "description": "菜单类型 横向或者纵向",
+              "name": "mode",
+              "required": false,
+              "type": {
+                "name": "\"horizontal\" | \"vertical\" | undefined"
+              }
+            },
+            "style": {
+              "defaultValue": null,
+              "description": "",
+              "name": "style",
+              "required": false,
+              "type": {
+                "name": "CSSProperties | undefined"
+              }
+            },
+            "onSelect": {
+              "defaultValue": null,
+              "description": "点击菜单项触发的回掉函数",
+              "name": "onSelect",
+              "required": false,
+              "type": {
+                "name": "((selectedIndex: string) => void) | undefined"
+              }
+            },
+            "defaultOpenSubMenus": {
+              "defaultValue": null,
+              "description": "设置子菜单的默认打开 只在纵向模式下生效",
+              "name": "defaultOpenSubMenus",
+              "required": false,
+              "type": {
+                "name": "string[] | undefined"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "MenuItem",
+          "methods": [],
+          "props": {
+            "index": {
+              "defaultValue": null,
+              "description": "",
+              "name": "index",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "disabled": {
+              "defaultValue": null,
+              "description": "",
+              "name": "disabled",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "style": {
+              "defaultValue": null,
+              "description": "",
+              "name": "style",
+              "required": false,
+              "type": {
+                "name": "CSSProperties | undefined"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "SubMenu",
+          "methods": [],
+          "props": {
+            "index": {
+              "defaultValue": null,
+              "description": "",
+              "name": "index",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        },
+        {
+          "description": "",
+          "displayName": "TextBox",
+          "methods": [],
+          "props": {
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
     {
       "key": "src/components/Button/button.tsx",
       "value": [
@@ -696,255 +978,6 @@
           "displayName": "textbox",
           "methods": [],
           "props": {
-            "className": {
-              "defaultValue": null,
-              "description": "",
-              "name": "className",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "key": "src/index.tsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "Button",
-          "methods": [],
-          "props": {
-            "btnType": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnType",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnWidth": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnWidth",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnHeight": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnHeight",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnBgColor": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnBgColor",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnBgImg": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnBgImg",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnRadius": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnRadius",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "isShowBadge": {
-              "defaultValue": null,
-              "description": "",
-              "name": "isShowBadge",
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "disabled": {
-              "defaultValue": null,
-              "description": "",
-              "name": "disabled",
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "className": {
-              "defaultValue": null,
-              "description": "",
-              "name": "className",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "btnWord": {
-              "defaultValue": null,
-              "description": "",
-              "name": "btnWord",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "getData": {
-              "defaultValue": null,
-              "description": "",
-              "name": "getData",
-              "required": false,
-              "type": {
-                "name": "btnData | undefined"
-              }
-            }
-          }
-        },
-        {
-          "description": "为网站提供导航功能的菜单。支持横向纵向两种模式，支持下拉菜单。\n~~~js\nimport { Menu } from 'vikingship'\n~~~",
-          "displayName": "Menu",
-          "methods": [],
-          "props": {
-            "defaultIndex": {
-              "defaultValue": null,
-              "description": "默认 active 的菜单项的索引值",
-              "name": "defaultIndex",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "className": {
-              "defaultValue": null,
-              "description": "",
-              "name": "className",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "mode": {
-              "defaultValue": null,
-              "description": "菜单类型 横向或者纵向",
-              "name": "mode",
-              "required": false,
-              "type": {
-                "name": "\"horizontal\" | \"vertical\" | undefined"
-              }
-            },
-            "style": {
-              "defaultValue": null,
-              "description": "",
-              "name": "style",
-              "required": false,
-              "type": {
-                "name": "CSSProperties | undefined"
-              }
-            },
-            "onSelect": {
-              "defaultValue": null,
-              "description": "点击菜单项触发的回掉函数",
-              "name": "onSelect",
-              "required": false,
-              "type": {
-                "name": "((selectedIndex: string) => void) | undefined"
-              }
-            },
-            "defaultOpenSubMenus": {
-              "defaultValue": null,
-              "description": "设置子菜单的默认打开 只在纵向模式下生效",
-              "name": "defaultOpenSubMenus",
-              "required": false,
-              "type": {
-                "name": "string[] | undefined"
-              }
-            }
-          }
-        },
-        {
-          "description": "",
-          "displayName": "MenuItem",
-          "methods": [],
-          "props": {
-            "index": {
-              "defaultValue": null,
-              "description": "",
-              "name": "index",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "disabled": {
-              "defaultValue": null,
-              "description": "",
-              "name": "disabled",
-              "required": false,
-              "type": {
-                "name": "boolean | undefined"
-              }
-            },
-            "className": {
-              "defaultValue": null,
-              "description": "",
-              "name": "className",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "style": {
-              "defaultValue": null,
-              "description": "",
-              "name": "style",
-              "required": false,
-              "type": {
-                "name": "CSSProperties | undefined"
-              }
-            }
-          }
-        },
-        {
-          "description": "",
-          "displayName": "SubMenu",
-          "methods": [],
-          "props": {
-            "index": {
-              "defaultValue": null,
-              "description": "",
-              "name": "index",
-              "required": false,
-              "type": {
-                "name": "string | undefined"
-              }
-            },
-            "title": {
-              "defaultValue": null,
-              "description": "",
-              "name": "title",
-              "required": true,
-              "type": {
-                "name": "string"
-              }
-            },
             "className": {
               "defaultValue": null,
               "description": "",

@@ -1,6 +1,6 @@
 import * as mixins from '~utils/mixins'
 import { media } from '~theme/breakpoints'
-
+import './base.css'
 export const wrapper = {
   bg: '#5396ff',
   position: 'relative',

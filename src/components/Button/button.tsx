@@ -42,11 +42,11 @@ const Button:FC<BaseButtonProps> = (props)=>{
       'disabled': disabled
   })
   const btnStyle = {
-    width:btnWidth+'px',
-    height:btnHeight+'px',
+    width:btnWidth,
+    height:btnHeight,
     background:btnBgColor,
-    borderTopLeftRadius:btnRadius+'px',
-    borderBottomLeftRadius:btnRadius+'px',
+    borderTopLeftRadius:btnRadius,
+    borderBottomLeftRadius:btnRadius,
   }
   return (
     <button className={classes} style={btnStyle}>
@@ -58,13 +58,16 @@ const Button:FC<BaseButtonProps> = (props)=>{
           <span className="old-price">{getData.oldPrice}</span>
         </p>
       }
-      <p className="word">wo-{btnWord}</p>
+      <p className="word">{btnWord}</p>
     </button>
   )
 }
 Button.defaultProps = {
   btnBgImg:'',
   isShowBadge:false,
+  btnWidth:'100px',
+  btnHeight:'100px',
+  btnRadius:'0px',
   btnType:ButtonType.Half
 }
 export default Button;

@@ -1,0 +1,61 @@
+table.css-134anpw{
+    border-left:1px solid #c4daf1;
+    border-right:1px solid #c4daf1;
+    border-top: 1px solid #c4daf1;
+    font-size: 16px;
+    margin-top:10px;
+}
+table thead tr{
+    background: #eeeeee;
+    color:#333;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    border-bottom-width:1px;
+}
+table tr th{
+    text-align: center !important;
+}
+table tbody tr td.css-11a86gi{
+    text-align: center !important;
+    border-color:#c4daf1;
+}
+
+table tr:nth-child(even){
+    background-color: #f7f6f6e8;
+}
+.css-hafajd{
+    border-bottom-width:1px !important;
+}
+
+/* blockquote.css-16r6o5s{
+    background-color:#81a4ec;
+    color:#fff;
+    border-left:5px solid #356ad6;
+} */
+
+h1 a:hover,h2 a:hover,h3 a:hover{
+    text-decoration: none !important;
+}
+h3{
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+}
+
+code.css-ueqitl{
+    background: #eee;
+    padding:5px 10px;
+}
+
+ul li.css-q43a5f{
+    list-style-type:disc;
+    margin-left: 10px;
+    color: #666;
+}
+
+p.css-1ftn47p{
+    height: 50px;
+    line-height: 50px;
+    margin-bottom:0px;
+}

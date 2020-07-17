@@ -97,7 +97,8 @@ name: ${answers.name}
 route: /${lowerName}
 menu: 业务组件
 ---
-> ${answers.desc}`
+> ${answers.desc}
+建议不要在文档中使用 ## 形式的二级标题，否则文档会自动把二级标题添加到左侧导航`
 }
 
 function initTsx(answers){

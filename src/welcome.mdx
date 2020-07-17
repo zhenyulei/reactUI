@@ -6,15 +6,7 @@ route: /
 > 欢迎访问PLUS会员业务组件库，该组件库用来构建京东PLUS会员业务组件，便于后续开发。
 
 
-**开发者使用方式**
-
-更新官方方式：
-
-- 1 执行 `npm run docz:build` 之后，在提交 git，则自动更新官方网站。
-
----
-
-**组件库使用方式**
+### 组件库使用方式
 
 **安装**
 
@@ -28,8 +20,7 @@ npm install reactui -S
 npm install node-sass -D
 ```
 
-
-**支持按需加载**
+**建议使用：按需加载**
 
 用户安装 `npm i reactui -S`,
 首先安装 `@nutui/babel-plugin-separate-import` 插件:
@@ -56,9 +47,36 @@ npm i @nutui/babel-plugin-separate-import -D
     ]
 }
 ```
+**使用**
 
 接下来，我们就可以在项目里只引入用到的组件了。默认情况下，样式也无需单独引入。插件会自动将组件的 SCSS 样式引入方式。
 
 ```js
 import { Button } from 'reactui';
 ```
+
+---
+
+### 组件库开发者使用
+
+- 执行`npm install`安装依赖文件；
+
+- 执行`npm run add`添加新的组件；
+
+- 执行`npm run doc:dev`自动打开本地文档页面，可以在后缀为.mdx文件中，添加示例文档和组件；
+  
+- 执行`npm run doc:build`生成文档编译文件，会打包在 docsite 文件夹下，最终上线文件就是该文件夹；
+
+- 执行`npm run build`生成组件编译后的代码文件夹 dist，最终用来上线到 npm 上；
+
+- 执行`npm run test`执行单元测试功能；
+
+PS:
+
+- 1、node版本建议在10.15.0以上
+- 2、[执行单元测试相关文档](https://www.html.cn/create-react-app/docs/running-tests/)
+
+更新官方方式：
+
+- 1 执行 `npm run docz:build` 之后，在提交 git，则自动更新官方网站。
+
