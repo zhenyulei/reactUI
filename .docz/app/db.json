@@ -36,21 +36,6 @@
       }
     },
     {
-      "key": "src/components/TextBox/textbox.mdx",
-      "value": {
-        "name": "TextBox",
-        "route": "/textbox",
-        "menu": "业务组件",
-        "id": "c3dc10fd543bf16589e9bb9280c6f404",
-        "filepath": "src/components/TextBox/textbox.mdx",
-        "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/src/components/TextBox/textbox.mdx",
-        "link": "",
-        "hidden": false,
-        "slug": "src-components-text-box-textbox",
-        "headings": []
-      }
-    },
-    {
       "key": "src/components/Menu/menu.mdx",
       "value": {
         "name": "Menu",
@@ -69,6 +54,21 @@
             "value": "基本属性"
           }
         ]
+      }
+    },
+    {
+      "key": "src/components/TextBox/textbox.mdx",
+      "value": {
+        "name": "TextBox",
+        "route": "/textbox",
+        "menu": "业务组件",
+        "id": "c3dc10fd543bf16589e9bb9280c6f404",
+        "filepath": "src/components/TextBox/textbox.mdx",
+        "fullpath": "/Users/zhenyulei/Documents/JD/2020/PLUS/code/component/plus/reactui3/reactUI/src/components/TextBox/textbox.mdx",
+        "link": "",
+        "hidden": false,
+        "slug": "src-components-text-box-textbox",
+        "headings": []
       }
     },
     {
@@ -628,6 +628,17 @@
               "required": false
             }
           }
+        }
+      ]
+    },
+    {
+      "key": "dist/components/TextBox/index.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TextBox",
+          "methods": [],
+          "actualName": "TextBox"
         }
       ]
     }

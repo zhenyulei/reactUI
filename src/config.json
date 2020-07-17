@@ -11,6 +11,12 @@
       "chnName": "菜单",
       "desc": "菜单描述文案",
       "author": "zhenyulei"
+    },
+    {
+      "name": "TextBox",
+      "chnName": "文字组件",
+      "desc": "文字渲染组件",
+      "author": "zhenyulei"
     }
   ]
 }
